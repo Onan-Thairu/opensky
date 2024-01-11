@@ -27,8 +27,7 @@ h1 {
   display: flex;
 }
 
-.header-item,
-.table-item {
+.header-item {
   flex: 1;
   padding: 10px;
   text-align: center;
@@ -36,8 +35,4 @@ h1 {
 
 .header-item {
   font-weight: bold;
-}
-
-.table-row:nth-child(even) {
-  background-color: #f9f9f9;
 }
