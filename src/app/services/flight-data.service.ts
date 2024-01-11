@@ -7,28 +7,22 @@ import { Flight } from '../Flight';
 export class FlightDataService {
   private flights: Flight[] = [
     {
-      icao24: "icao24",
-      callsign: "callsign",
-      origin_country: "Kenya",
-      time_position: 24524352,
-      longitude: 34.2345243,
-      latitude: -1.123451324
+      airport: "DFW",
+      time: new Date().toLocaleDateString(),
+      arriving: new Date().toLocaleDateString(),
+      departing: new Date().toLocaleDateString()
     },
     {
-      icao24: "icao24",
-      callsign: "callsign",
-      origin_country: "Somalia",
-      time_position: 24524352,
-      longitude: 34.2345243,
-      latitude: -1.123451324
+      airport: "Heathrow",
+      time: new Date().toLocaleDateString(),
+      arriving: new Date().toLocaleDateString(),
+      departing: new Date().toLocaleDateString()
     },
     {
-      icao24: "icao24",
-      callsign: "callsign",
-      origin_country: "South Africa",
-      time_position: 24524352,
-      longitude: 34.2345243,
-      latitude: -1.123451324
+      airport: "JFK",
+      time: new Date().toLocaleDateString(),
+      arriving: new Date().toLocaleDateString(),
+      departing: new Date().toLocaleDateString()
     }
   ]
   constructor() { }
