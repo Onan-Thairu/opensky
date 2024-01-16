@@ -12,10 +12,12 @@ import { Flight } from '../../Flight';
 export class FlightDataComponent {
 
   allFlights: Flight[] = []
-  constructor(private flightData: FlightDataService) {}
+  constructor(private flightDataService: FlightDataService) {}
 
   ngOnInit() {
-    return this.allFlights = this.flightData.getFlightData()
+    // this.flightDataService.getFlightData().subscribe((flights) => this.allFlights = flights);
+    this.flightDataService.getFlightData().subscribe((flights) => console.log(flights));
+    
   }
 
 }
